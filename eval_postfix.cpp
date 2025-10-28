@@ -7,11 +7,16 @@ using namespace std;
 int calc(int x , int y, char op){
     switch (op)
     {
-        case '^': return pow(x,y);
-        case '*': return x*y;
-        case '/': return x/y;
-        case '+': return x+y;
-        case '-': return x-y;
+        case '^': 
+            return pow(x,y);
+        case '*': 
+            return x*y;
+        case '/': 
+            return x/y;
+        case '+': 
+            return x+y;
+        case '-': 
+            return x-y;
         default:
             cout << "Invalid operator: " << op << endl;
             return 0;
@@ -38,3 +43,4 @@ int main(){
     cout << eval(str) << endl;
     return 0;
 }
+
