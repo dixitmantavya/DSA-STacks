@@ -6,11 +6,16 @@ using namespace std;
 
 int calc(int x, int y, char op) {
     switch (op) {
-        case '^': return pow(x, y);
-        case '*': return x * y;
-        case '/': return x / y;
-        case '+': return x + y;
-        case '-': return x - y;
+        case '^': 
+            return pow(x, y);
+        case '*': 
+            return x * y;
+        case '/': 
+            return x / y;
+        case '+': 
+            return x + y;
+        case '-': 
+            return x - y;
         default:
             cout << "Invalid operator: " << op << endl;
             return 0;
@@ -18,9 +23,12 @@ int calc(int x, int y, char op) {
 }
 
 int precedence(char ch){
-    if(ch=='^') return 3;
-    else if(ch=='*' || ch=='/') return 2;
-    else if(ch=='+' || ch=='-') return 1;
+    if(ch=='^') 
+        return 3;
+    else if(ch=='*' || ch=='/') 
+        return 2;
+    else if(ch=='+' || ch=='-') 
+        return 1;
     return 0;
 }
 
@@ -74,3 +82,4 @@ int main(){
     cout << eval(expr) << endl;
     return 0;
 }
+
